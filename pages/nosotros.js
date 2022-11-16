@@ -3,7 +3,10 @@ import Layout from "../components/layout";
 export default function Nosotros() {
   return (
     <div>
-      <Layout>
+      <Layout
+        title={'Nosotros'}
+        description='Sobre nosotros y algo mas'
+      >
         <h2>Desde nosotros</h2>
         <Link href="/">Ir a Inicio</Link>
       </Layout>
