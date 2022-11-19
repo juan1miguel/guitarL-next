@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Layout from "../components/layout";
 export default function Nosotros() {
   return (
@@ -7,8 +6,7 @@ export default function Nosotros() {
         title={'Nosotros'}
         description='Sobre nosotros y algo mas'
       >
-        <h2>Desde nosotros</h2>
-        <Link href="/">Ir a Inicio</Link>
+        <h2>Nosotros</h2>
       </Layout>
     </div>
   );
