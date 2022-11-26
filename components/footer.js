@@ -7,8 +7,8 @@ export default function Footer() {
         <nav className={styles.navegacion}>
           <Link href="/">Inicio</Link>
           <Link href="/nosotros">Nosotros</Link>
-          <Link href="/blog">Blog</Link>
           <Link href="/tienda">Tienda</Link>
+          <Link href="/blog">Blog</Link>
         </nav>
         <p className={styles.copyright}>Todos los derechos reservados {new Date().getFullYear()} </p> 
       </div>
