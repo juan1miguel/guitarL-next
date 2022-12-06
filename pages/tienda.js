@@ -1,5 +1,5 @@
 import Layout from "../components/layout";
-import ListadoGuitarras from "../components/listado-guitarras";
+import Guitarra from "../components/guitarra";
 export default function Tienda({ guitarras }) {
   console.log(guitarras);
   return (
@@ -10,7 +10,9 @@ export default function Tienda({ guitarras }) {
       >
         <main className="contenedor">
           <h2 className="heading">Nuestra Coleccion</h2>
-          <ListadoGuitarras guitarras={guitarras} />
+        {guitarras?.map(guitarra=>(
+          <Guitarra key={guitarra.id} guitarra={guitarra.attributes} />
+        ))}
         </main>
       </Layout>
     </div>
