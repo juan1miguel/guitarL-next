@@ -1,5 +1,7 @@
 import Layout from "../components/layout";
 import Post from "../components/post";
+import styles from '../styles/grid.module.css'
+
 export default function Blog({ posts }) {
   return (
     <div>
@@ -9,7 +11,7 @@ export default function Blog({ posts }) {
       >
         <main className="contenedor">
           <h2 className="heading">Blog</h2>
-          <div>
+          <div className={styles.grid}>
             {posts.map((post) =>
              (
 
